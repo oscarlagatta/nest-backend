@@ -23,12 +23,12 @@ export class AuthController {
   }
 
   @Post('/register')
-  login(@Body() registerUserDto: RegisterUserDto) {
+  register(@Body() registerUserDto: RegisterUserDto) {
     return this.authService.register(registerUserDto);
   }
 
   @Post('/login')
-  register(@Body() loginDto: LoginDto) {
+  login(@Body() loginDto: LoginDto) {
     return this.authService.login(loginDto);
   }
 
