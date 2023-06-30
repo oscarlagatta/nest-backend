@@ -57,7 +57,7 @@ export class AuthService {
     if (!user) {
       throw new UnauthorizedException('not valid credentials email');
     }
-    console.log({ loginDto });
+
 
     if (!bcrypt.compareSync(password, user.password)) {
       throw new UnauthorizedException('not valid credentials email');

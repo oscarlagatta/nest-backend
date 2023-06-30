@@ -14,7 +14,5 @@ import { AuthModule } from './auth/auth.module';
   providers: [],
 })
 export class AppModule {
-  constructor() {
-    console.log(process.env);
-  }
+  constructor() {}
 }
